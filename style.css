@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+body{
+    font-family: 'montserrat', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images\ \(1\).jpeg); 
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 65px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+    border-bottom: 2px solid #313431;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input :focus{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    color: #fff;
+    font-size: 16px;
+}
+
+.current .temperature {
+     color: #F8B62D;
+    font-size: 102px;
+    font-weight: 500;
+    margin: 30px 0px;
+    text-shadow: 3px 11px rgba(0, 0, 0, 0.6);
+}
+
+.current .temperature span{
+    font-weight: 500;
+}
+
+.current .weather{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .high-low {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.weather2day{
+    text-align: center;
+    color: #F8B62D;
+    font-weight: 1100;
+    font-size: 39px;
+    padding: 46px 15px 15px;
+    text-shadow: 1px 3px rgba(0, 0, 0, 1);
+}
